@@ -8,7 +8,6 @@ import android.widget.FrameLayout
 import androidx.databinding.BindingAdapter
 import com.udacity.shoestore.databinding.ShoeCardBinding
 import com.udacity.shoestore.models.Shoe
-import kotlinx.android.synthetic.main.shoe_card.view.*
 
 class ShoeCard @JvmOverloads constructor(
 
@@ -24,7 +23,4 @@ class ShoeCard @JvmOverloads constructor(
     fun configure(shoe: Shoe) {
         binding.shoe = shoe
     }
-
 }
-
-// see if you can get livedata.  livedata needs to go to databinding

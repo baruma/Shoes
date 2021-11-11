@@ -14,7 +14,6 @@ import com.udacity.shoestore.databinding.FragmentListBinding
 import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.view.ShoeCard
 import com.udacity.shoestore.viewmodels.ShoeListViewModel
-import kotlinx.android.synthetic.main.shoe_card.*
 
 class ListFragment : Fragment() {
     private val viewModel: ShoeListViewModel by activityViewModels()
