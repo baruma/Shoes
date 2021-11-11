@@ -16,7 +16,7 @@
         android:layout_marginTop="174dp"
         android:layout_marginEnd="127dp"
         android:gravity="center_horizontal"
-        android:text="WHAT'S IN THE BOX!?!?!?"
+        android:text="@string/keven_spacey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="181dp"
         android:gravity="center_horizontal"
-        android:text="shoes :)"
+        android:text="@string/smile_shoes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onboardingText" />

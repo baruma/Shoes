@@ -21,7 +21,6 @@
         tools:ignore="SpeakableTextPresentCheck">
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_below="@+id/toolbarr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -34,7 +33,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="60dp"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

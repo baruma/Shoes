@@ -12,9 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".DetailFragment">
 
-        // A TextView label and EditView for the Shoe Name, Company, Shoe Size and Description
-        // A Cancel button with an action to navigate back to the shoe list screen
-
         <Button
             android:id="@+id/addShoeButton"
             android:layout_width="wrap_content"

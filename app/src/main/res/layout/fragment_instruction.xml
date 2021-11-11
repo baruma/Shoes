@@ -15,7 +15,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:gravity="center_horizontal"
-        android:text="Hit the '+' Button to add a new shoe to the Inventory List on the next screen.  Be sure to enter in relevant details in the Detail view, too."
+        android:text="@string/instructions_message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="160dp"
         android:gravity="center_horizontal"
-        android:text="Got it"
+        android:text="@string/got_it_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instructionText" />

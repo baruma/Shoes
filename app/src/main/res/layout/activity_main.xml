@@ -25,14 +25,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- res/layout/example_activity.xml -->
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--        android:id="@+id/loginFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:name="com.udacity.shoestore.LoginFragment" />-->
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
