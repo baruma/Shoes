@@ -6,7 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
+    <!-- I use constraint layouts here because it is more resource management friendly.
+         The alternative approach of using composition layout would be a bit overkill, for
+         UI with flat design (i.e. nothing is being nested, there are no animations).
+         An example of an app that uses Coordinator Layout is Google Maps - and it benefits much more
+         from that vs. Coordinator Layout since there are a lot of animations and moving UI that would benefit from it.
+         This app does not as most of these views are flat.
 
+         I originally approached this project using LinearLayouts but figured that was
+         very overkill because it would be taxing the device resources if it had to go through
+         nested views.
+    -->
     <EditText
         android:id="@+id/emailEntry"
         android:layout_width="match_parent"

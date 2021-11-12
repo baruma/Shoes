@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Very similar to my comments in the instruction fragment - there's just two textviews and a button
+which is already a very flat UI - so constraintlayout made sense again.  I could have nested the two textviews to make it
+look uniform but opted not to.-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

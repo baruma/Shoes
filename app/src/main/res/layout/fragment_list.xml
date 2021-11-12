@@ -3,6 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<!--
+  I used ConstraintLayout here again to flatten the hierarchy, and to ensure render times were quick.
+  -->
+
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/parentLayout"
     android:layout_width="match_parent"
         android:layout_height="match_parent"

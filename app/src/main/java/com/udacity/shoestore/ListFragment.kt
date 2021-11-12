@@ -36,8 +36,6 @@ class ListFragment : Fragment() {
         }
     }
 
-    // recreate listfragment and add new data from viewmodel\
-    // You need to get data from shoes
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreate(savedInstanceState)
 
@@ -54,8 +52,6 @@ class ListFragment : Fragment() {
         binding.actionButton.setOnClickListener {
             findNavController().navigate(detailFragment)
         }
-
-       // viewModel.shoeLiveData.observe(viewLifecycleOwner, observer)
 
         for (shoe: Shoe in viewModel.shoes) {
             val shoeCard: ShoeCard = ShoeCard(context!!)

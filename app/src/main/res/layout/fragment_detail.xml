@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--This view looks very very similar to the other views, no?  It's flat, there's no hierarchy
+and it's very very 'flat'.  There are no views being nested, no animations, nada.  Composition is used
+again to use minimal system reources again.
+
+This, like the other views, could use linearlayout, but I don't want to use more memory than necessary, which can slow the rendering.
+
+-->
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">

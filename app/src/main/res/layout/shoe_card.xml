@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- I use constraint layout here again to keep a flat hierarchy.  Originally, I designed this with linearlayouts stacked on top of
+ each other, but opted for the constraintlayout again in the for increased performance.  If I went for a more "nested" design (stackviews holding
+ onto labels and their corresponding data) I could have used linearlayout.
+ -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -48,6 +53,8 @@
                     app:layout_constraintHorizontal_bias="0"
                     tools:text = "Dummy Name Label"
                     android:text="@{shoe.name}" />
+<!--                android:text="@{shoe.name}" />-->
+
 
                 <TextView
                     android:id="@+id/brandNameLabel"
