@@ -9,10 +9,7 @@ import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.BR
 import com.udacity.shoestore.models.Shoe
 
-
-// Used Observable because BaseObservable + ViewModel not allowed to be inherited at once - Diamond of Doom results.
-
-class ShoeListViewModel: ViewModel(), Observable {
+class ShoeListViewModel: ViewModel() {
 
     val shoes = mutableListOf<Shoe>()
     val shoeLiveData = MutableLiveData<Shoe>()
@@ -21,25 +18,6 @@ class ShoeListViewModel: ViewModel(), Observable {
     fun addShoe(shoe: Shoe) {
         shoes.add(shoe)
         shoeLiveData.value = shoe
-    }
-
-    @Bindable
-    var shoe = Shoe("", "", " ")
-        set(value) {
-            if(value != field) {
-                field = value
-                propertyChangeRegistry.notifyChange(this, BR.shoe)
-            }
-        }
-
-    override fun addOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {
-        propertyChangeRegistry.add(callback)
-        print("I mostly don't do anything")
-    }
-
-    override fun removeOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {
-        propertyChangeRegistry.remove(callback)
-        print("I also mostly don't do anything.")
     }
 
 }

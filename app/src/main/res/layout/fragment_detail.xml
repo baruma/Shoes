@@ -11,11 +11,8 @@ again to use minimal system reources again.
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
-            name="model"
-            type="com.udacity.shoestore.viewmodels.ShoeListViewModel" />
-        <variable
-            name="shoe"
-            type="com.udacity.shoestore.models.Shoe" />
+            name="shoeDetailModel"
+            type="com.udacity.shoestore.viewmodels.ShoeDetailViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +26,7 @@ again to use minimal system reources again.
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
-            android:text="Add Shoe"
+            android:text="@string/add_shoe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,10 +39,10 @@ again to use minimal system reources again.
             android:layout_marginTop="100dp"
             android:height="50dp"
             android:ems="10"
-            android:hint="Enter Shoe Name"
+            android:hint="@string/enter_shoe_name"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@={shoe.name}"
+            android:text="@={shoeDetailModel.name}"
         app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -57,10 +54,10 @@ again to use minimal system reources again.
             android:layout_marginTop="30dp"
             android:height="50dp"
             android:ems="10"
-            android:hint="Enter Brand Name"
+            android:hint="@string/enter_brand_name"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@={shoe.brand}"
+            android:text="@={shoeDetailModel.brand}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoeNameEntry" />
@@ -72,10 +69,10 @@ again to use minimal system reources again.
             android:layout_marginTop="30dp"
             android:height="50dp"
             android:ems="10"
-            android:hint="Enter Shoe Size"
+            android:hint="@string/enter_shoe_size"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@={shoe.size}"
+            android:text="@={shoeDetailModel.shoeSize}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/brandNameEntry" />

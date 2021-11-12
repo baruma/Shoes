@@ -14,4 +14,8 @@
     <string name="log_in">Log In</string>
     <string name="keven_spacey">WHAT\'S IN THE BOX!?!?!?</string>
     <string name="smile_shoes">shoes :)</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="enter_shoe_name">Enter Shoe Name</string>
+    <string name="enter_brand_name">Enter Brand Name</string>
+    <string name="enter_shoe_size">Enter Shoe Size</string>
 </resources>
