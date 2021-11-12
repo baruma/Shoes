@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <!--
-  I used ConstraintLayout here again to flatten the hierarchy, and to ensure render times were quick.
+  LinearLayout is used in this view specifically
+  because the card view i made is being held within it.  It holds onto views that are nested inside.
   -->
 
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/parentLayout"
@@ -31,7 +32,7 @@
             </LinearLayout>
     </ScrollView>
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/actionButton"
         android:layout_width="60dp"
         android:layout_height="60dp"

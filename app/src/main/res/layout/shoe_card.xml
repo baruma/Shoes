@@ -9,7 +9,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="model"
             type="com.udacity.shoestore.viewmodels.ShoeListViewModel" />
@@ -18,7 +17,6 @@
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
     </data>
-
     <merge>
 
         <androidx.cardview.widget.CardView
@@ -52,7 +50,7 @@
                     android:layout_margin="20dp"
                     app:layout_constraintHorizontal_bias="0"
                     tools:text = "Dummy Name Label"
-                    android:text="@{shoe.name}" />
+                    android:text= "@={shoe.name}" />
 <!--                android:text="@{shoe.name}" />-->
 
 
@@ -76,7 +74,7 @@
                     app:layout_constraintStart_toEndOf="@id/brandNameLabel"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0"
-                    android:text="@{shoe.brand}" />
+                    android:text="@={shoe.brand}" />
 
 
                 <TextView
@@ -99,7 +97,7 @@
                     app:layout_constraintHorizontal_bias="0"
                     android:layout_margin="20dp"
                     tools:text = "Dummy Size Label"
-                    android:text="@{Double.toString(shoe.size)}" />
+                    android:text="@={shoe.size}"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

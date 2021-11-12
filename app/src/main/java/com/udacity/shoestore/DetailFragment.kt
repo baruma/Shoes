@@ -35,7 +35,11 @@ class DetailFragment : Fragment() {
             view.findNavController().popBackStack()
         }
         binding.addShoeButton.setOnClickListener {
-            val shoe = Shoe(binding.shoeNameEntry.text.toString(), binding.brandNameEntry.text.toString(), binding.shoeSizeEntry.text.toString().toDouble())
+            val shoe = Shoe(
+                binding.shoeNameEntry.text.toString(),
+                binding.brandNameEntry.text.toString(),
+                binding.shoeSizeEntry.text.toString()
+            )
             model.addShoe(shoe)
             view.findNavController().popBackStack()
         }

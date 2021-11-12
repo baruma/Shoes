@@ -21,7 +21,6 @@ override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, saved
     return binding.root
 }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.loginButton).setOnClickListener { view ->
