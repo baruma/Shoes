@@ -13,6 +13,10 @@ again to use minimal system reources again.
         <variable
             name="shoeDetailModel"
             type="com.udacity.shoestore.viewmodels.ShoeDetailViewModel" />
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -70,7 +74,7 @@ again to use minimal system reources again.
             android:height="50dp"
             android:ems="10"
             android:hint="@string/enter_shoe_size"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:minHeight="48dp"
             android:text="@={shoeDetailModel.shoeSize}"
             app:layout_constraintEnd_toEndOf="parent"

@@ -10,10 +10,12 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentDetailBinding
 import com.udacity.shoestore.models.Shoe
+import com.udacity.shoestore.viewmodels.ShoeDetailViewModel
 import com.udacity.shoestore.viewmodels.ShoeListViewModel
 
 class DetailFragment : Fragment() {
     private val model: ShoeListViewModel by activityViewModels()
+    private val shoeDetailModel =  ShoeDetailViewModel()
     private lateinit var binding: FragmentDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +27,7 @@ class DetailFragment : Fragment() {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
         binding.lifecycleOwner = this
+        binding.shoeDetailModel = shoeDetailModel
         return binding.root
     }
 
@@ -35,12 +38,8 @@ class DetailFragment : Fragment() {
             view.findNavController().popBackStack()
         }
         binding.addShoeButton.setOnClickListener {
-            val shoe = Shoe(
-                binding.shoeNameEntry.text.toString(),
-                binding.brandNameEntry.text.toString(),
-                binding.shoeSizeEntry.text.toString()
-            )
-            model.addShoe(shoe)
+
+            model.addShoe(shoeDetailModel.shoe)
             view.findNavController().popBackStack()
         }
     }

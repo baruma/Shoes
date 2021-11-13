@@ -17,7 +17,6 @@ override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, saved
     super.onCreate(savedInstanceState)
 
     binding = FragmentLoginBinding.inflate(inflater, container, false)
-
     return binding.root
 }
 

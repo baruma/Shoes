@@ -23,7 +23,7 @@
             android:id="@+id/shoeCard"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            app:cardBackgroundColor="#FF5722">
+            app:cardBackgroundColor="@color/orange">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_margin="20dp"
-                    android:textColor="#F8F5F5"/>
+                    android:textColor="@android:color/white"/>
 
                 <TextView
                     android:id="@+id/shoeNameEntryLabel"
@@ -62,7 +62,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_margin="20dp"
                     android:text="@string/shoe_brand_label"
-                    android:textColor="#FDFDFD" />
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/brandEntryLabel"
