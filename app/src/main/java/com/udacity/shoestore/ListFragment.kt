@@ -9,9 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R.id.detailFragment
 import com.udacity.shoestore.databinding.FragmentListBinding
 import com.udacity.shoestore.models.Shoe
@@ -72,10 +70,16 @@ class ListFragment : Fragment() {
         for (shoe: Shoe in viewModel.shoes) {
             val shoeCard: ShoeCard = ShoeCard(context!!)
             binding.linearLayout.addView(shoeCard)
-            shoeCard.configure(shoe)
+            shoeCard.configure(shoe) 
         }
 
     }
+
+    fun callParentMethod() {
+        activity!!.onBackPressed()
+    }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
